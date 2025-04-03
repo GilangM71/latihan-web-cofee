@@ -1,0 +1,367 @@
+:root {
+    --primary: #D2B48C;
+    --bg: #A67B5B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: white;
+
+}
+
+/* Navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: var(--primary);
+    border-bottom: 1px solid black;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Navbar */
+
+/* NAVBAR CONTENT LOGO*/
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: brown;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-logo span {
+    color: white;
+}
+
+/* NAVBAR CONTENT LOGO*/
+
+/* NAVBAR CONTENT NAV*/
+
+.navbar .navbar-nav a {
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 0.3rem;
+    padding-top: 5px;
+}
+
+.navbar .navbar-nav a:hover {
+    color: brown;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--bg);
+    transform: scale(0);
+    transition: 0.2s;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scale(0.5);
+}
+
+/* NAVBAR CONTENT NAV*/
+
+/* NAVBAR CONTENT EXTRA*/
+.navbar .navbar-extra a {
+    display: inline-block;
+    color: white;
+    margin: 0 0.5rem;
+    padding-top: 5px;
+}
+
+.navbar .navbar-extra a:hover {
+    color: brown;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* NAVBAR CONTENT EXTRA*/
+
+/* SECTION HERO */
+
+.hero {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background-image: url(../img/cafebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero .content {
+    padding: 0.5rem 1rem;
+    max-width: 60rem;
+    text-shadow: 0 0 3px black;
+    line-height: 1.6;
+}
+
+.hero .content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.hero .content h1 span {
+    color: var(--primary);
+}
+
+.hero .content .cta {
+    display: inline-block;
+    background-color: var(--primary);
+    color: whitesmoke;
+    margin-top: 2rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+    text-shadow: none;
+    font-weight: 600;
+    box-shadow: 1px 1px 3px black;
+}
+
+.hero .content .cta:hover {
+    background-color: wheat;
+    color: black;
+}
+
+/* SECTION HERO */
+/* SECTION HERO ABOUT */
+.about,
+.menu,
+.contact {
+    padding: 6rem 7% 2rem;
+    /* background-color: blue; */
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+    text-align: center;
+    font-family: 2rem;
+    margin: 1rem 7%;
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+.about h2 span,
+.menu h2 span {
+    color: var(--primary);
+}
+
+.about .row {
+    display: flex;
+    gap: 1rem;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+    max-width: 60rem;
+    min-width: 20rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about .row .content {
+    flex: 1 1 35rem;
+    min-width: 20rem;
+}
+
+.about .row .content h3 {
+    font-size: 2rem;
+}
+
+/* SECTION MENU */
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.menu .row .menu-card {
+    text-align: center;
+
+}
+
+.menu .row .menu-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.menu .row .menu-card .menu-card-img {
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.menu .row .menu-card .menu-card-title {
+    margin: 1rem 7% 0.5rem;
+    min-height: 50px;
+}
+
+/* SECTION CONTACT */
+.contact .row {
+    background-color: var(--primary);
+    display: flex;
+    margin-top: 2rem;
+    border-radius: 5px;
+
+}
+
+.contact .row .map {
+    display: flex;
+    flex: 1 1 45rem;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+}
+
+.contact .row form .input-group {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.contact .row form .input-group input {
+    width: 100%;
+    padding: 1rem;
+}
+
+.contact .row form input.btn {
+    display: flex;
+    background-color: rgb(0, 153, 255);
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary);
+    border-top: 3px solid black;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+footer .row .social,
+footer .row .links,
+footer .row .extra {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+}
+
+footer .row .social a{
+    margin-top: 0.5rem;
+}
+footer .row .social a i[data-feather="youtube"] {
+    color: red; 
+}
+footer .row .social a i[data-feather="instagram"] {
+    color: pink;
+}
+footer .row .social a i[data-feather="linkedin"] {
+    color: blue;
+}
+
+/* MEDIA QUERY RESPONSIVE */
+
+/* LAPTOP */
+@media screen and (max-width: 1366px) {}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+
+    .navbar .navbar-nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 100%;
+        right: -100%;
+        width: 30%;
+        height: 100vh;
+        background-color: var(--primary);
+        transition: all 0.5s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    /* SECTION */
+    .hero .content {
+        max-width: 50rem;
+
+    }
+
+    .hero .content h1 {
+        font-size: 1.9rem;
+    }
+
+
+    .about {}
+
+    .about .row {
+
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img {
+        min-width: 10rem;
+    }
+
+    .about .row .content {
+        min-width: 15rem;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 576px) {
+    .navbar .navbar-nav {
+        width: 50%;
+    }
+
+    /* SECTION */
+    .hero .content {
+        width: 40rem;
+    }
+
+    .hero .content h1 {
+        font-size: 1.6rem;
+    }
+}
